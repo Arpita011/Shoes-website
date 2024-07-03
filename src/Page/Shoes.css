@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+MX:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('https://static.designboom.com/wp-content/uploads/2023/01/dior-3D-printed-shoes-designboom-01.jpg');
+    background-size: 730px;
+    width: 100%;
+    
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #0056b3;
+    color: white;
+    padding: 30px 0;
+}
+.home-link {
+    text-decoration: none;
+    color: #111;
+
+    font-size: x-large;
+}
+
+.logo {
+    float: left;
+    font-size: 32px;
+    top: -20px;
+    margin: -30px;
+}
+
+
+nav {
+    float: left;
+    margin-left: 170px;
+    margin-top: -10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #333;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.categories {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.categories button {
+    background-color: #0056b3;
+    box-shadow: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem  2rem;
+    margin: 1rem 4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.categories button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shoe-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1rem;
+    width: calc(33% - 2rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.shoe-item:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shoe-item img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease;
+    height: 60%;
+}
+
+.shoe-item:hover img {
+    transform: scale(1.05);
+}
+
+.shoe-item h2,
+.shoe-item p {
+    margin: 0.5rem;
+}
+
+.suggestions {
+    margin-top: 2rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5.45rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 5px;
+    padding: 4px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover, .social-icons img:focus {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 2px;
+}
+
+
+
+@media (max-width: 768px) {
+    .shoe-item {
+        width: calc(50% - 2rem);
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .categories button {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .shoe-item {
+        width: calc(100% - 2rem);
+    }
+
+    .about {
+        padding: 0.5rem;
+    }
+
+    .vertical-nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .vertical-nav a {
+        margin: 0 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.responsive {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a button {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+    }
+
+    .dropdown li a button {
+        padding: 10px;
+    }
+}

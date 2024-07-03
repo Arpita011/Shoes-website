@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('https://static.designboom.com/wp-content/uploads/2023/01/dior-3D-printed-shoes-designboom-01.jpg');
+    background-size: 730px;
+    width: 100%;
+    
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #b30086;
+    color: white;
+    padding: 30px 0;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #111;
+    font-size: x-large;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    margin: -16px;
+}
+
+nav {
+    float: left;
+    margin-left: 170px;
+    margin-top: -25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    
+    color: white;
+    background-color: #333;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 0px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    
+    text-decoration: none;
+}
+
+
+
+.content {
+    padding: 20px;
+    color: #222;
+    text-align: center;
+}
+.content,h2{
+    font-size: x-large;
+    text-shadow: 8px 16px 32px #333;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 79px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 2px;
+    padding: 1px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover, .social-icons img:focus {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.responsive {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a button {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+    }
+
+    .dropdown li a button {
+        padding: 10px;
+    }
+}
